@@ -1,0 +1,314 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%; height: auto; }
+  .picture li:hover { width: 100%; }
+  .picture li a { display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:100%; height: auto; }
+  .picture li img:hover { display:block; width:100%; height: auto; } 
+  #first_pic { display:black; width:100%; height:auto; }
+  .poster { margin-left: 30px; }
+  .tabs { border: solid thin white; margin: 20px; padding-left: 20px; }
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b" style="margin:0px; padding: 0px;" >
+			<h3 style="color: red; font-size: 16pt; padding: 10px;">MARVEL</h3>
+			<a href="#survey" class="ui-btn-right" data-rel="dialog">Survey</a>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<br/><br/><br/>
+				<img src="marvel-background.png" width="100%"><br/><br/>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#about" data-rel="dialog" data-transition="slide" title="마블 영화에 대하여"><span style="color:red">A</span>bout MARVEL</a></li>
+				<li><a href="#trailer" data-rel="dialog" data-transition="slide" title="영화 예고편"><span style="color:red">T</span>RAILER</a></li>
+				<li><a href="#character" data-rel="dialog" data-transition="slide" title="영화 캐릭터"><span style="color:red">C</span>HARACTER</a></li>
+				<li><a href="#music" data-rel="dialog" data-transition="slide" title="영화 음악"><span style="color:red">M</span>USIC</a></li>
+				<li><a href="#picture" data-rel="dialog" data-transition="slide" title="영화 사진"><span style="color:red">P</span>ICTURE</a></li>
+				<li><a href="02minfo.html" target="_blank" data-rel="dialog" title="만든이 이력서"><span style="color:red">R</span>ESUME</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h6>Copyright &copy; 2018 MARVEL. All rights reserved.</h6>
+		</div>
+	</div>
+	
+	<div data-role="page" id="about" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-direction="reverse">Home</a>
+			<h1 style="color: red">About MARVEL</h1>
+			<a href="#trailer" data-rel="dialog">Trailer</a>	
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="marvel-logo.jpg" width="100%">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<h1><strong style="color:red">M</strong>arvel <strong style="color:red">C</strong>inematic <strong style="color:red">U</strong>niverse</h1><br/>
+				<h3 style="color: pink; text-align: center">&gt; 마블 스튜디오에서 제작하는<span style="display:none"> &lt;</span><br/><span style="display:none"> &lt;</span>프랜차이즈 히어로 시리즈 &lt;</h3>
+				<strong>세계적으로</strong> 막대한 인기와 수익을 끌어들이는 미디어 부분 최강 컨텐츠 중 하나이다.<br/>
+				아이언맨 영화 개봉 이후 마블 스튜디오에서 제작한 영화, 드라마 등 모든 영상 미디어 작품은 모두 이 세계관 안에 포함되어 연결되어 있다.<br/><br/>
+
+				<strong>특정</strong> 시나리오 작가나 감독이 아닌, 마블 스튜디오 회장 케빈 파이기를 필두로 하는 제작위원회가 전체적 스토리 진행 플롯을 짜두고 각 단계의 영화를 감독에게 맡겨 제작하는 형식을 취하고 있다. 제작되는 모든 영화, 드라마, 단편 영화들이 연결점을 가지고 있으며, 동일한 시간선상에서 진행되어 간다.<br/><br/>
+
+				<strong>어벤져스 </strong>실사영화 시리즈를 중심으로 히어로 개별 영화를 단계별로 진행해 나가는 방식으로 영화가 만들어지고 있다.<br/>
+				마블 시네마틱 유니버스는 마블 코믹스 원작을 영화화한 작품들을 통칭하는 것이 아니라 마블에게 판권이 있는 캐릭터가 주연인 영화와 드라마들이 공유하는 세계관을 일컫는 용어다.<br/>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h6>Copyright &copy; 2018 MARVEL. All rights reserved.</h6>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="trailer" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-direction="reverse">Home</a>
+			<h1 style="color: red">TRAILER</h1>
+			<a href="#character" data-rel="dialog">Character</a>	
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="marvel-logo.jpg" width="100%">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>SPIDER-MAN: FAR FROM HOME</h3>
+					<li>
+					<iframe width="100%" height="240" src="https://www.youtube.com/embed/Nt9L1jCKGnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</li><br/>
+					<p>‘엔드게임’ 이후 변화된 일상에서 벗어나 학교 친구들과 유럽 여행을 떠난 스파이더맨 ‘피터 파커’(톰 홀랜드)가 정체불명의 조력자 ‘미스테리오’(제이크 질렌할)와 세상을 위협하는 새로운 빌런들을 만나면서 벌어지는 이야기를 그린 마블 액션 블록버스터</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>AVENGERS: ENGGAME HIGHLIGHT</h3>
+					<li><video controls width="100%" preload="metadata">
+					<source src="endgame.mp4" type="video/mp4">
+					</video></li>
+					<p>인피니티 워 이후 절반만 살아남은 지구<br/>마지막 희망이 된 어벤져스<br/>먼저 떠난 그들을 위해 모든 것을 걸었다!<br/> 위대한 어벤져스, 운명을 바꿀 최후의 전쟁이 펼쳐진다!</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h6>Copyright &copy; 2018 MARVEL. All rights reserved.</h6>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="character" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-direction="reverse">Home</a>
+			<h1 style="color:red">CHARACTER</h1>
+			<a href="#music" data-rel="dialog">Music</a>
+		</div>
+		
+		<div data-role="content">
+			<div  style="text-align:center">
+					<img src="marvel-logo.jpg" width="100%">
+			</div>
+		
+		<ul data-role="listview" data-icon="video" data-inset="true" data-divider-theme="e">
+			<li data-role="listdivider"><strong>Avengers</strong></li>
+			
+			<li><a href="https://youtu.be/dEk-M-dcwXo">
+				<img src="ironman.png" class="ui-li-icon">Iron Man
+				<p>Robert Downey Jr</p>
+				<p><strong><em>&quot;I Am Iron Man.&quot;</em></strong></p>
+				<span class="ui-li-count">recommend</span>
+			</a></li>
+			
+			<li><a href="https://youtu.be/-OmsnIBbjEQ">
+				<img src="blackwidow.png" class="ui-li-icon">Black Widow
+				<p>Scarlett Johansson</p>
+				<p><strong><em>&quot;She's Not Alone.&quot;</em></strong></p>
+			</a></li>
+			
+			<li><a href="https://youtu.be/XWi01eJIUtY">
+				<img src="captain.png" class="ui-li-icon">Captain America
+				<p>Chris Evans</p>
+				<p><strong><em>&quot;I Can Do This All Day.&quot;</em></strong></p>
+			</a></li>
+			
+			<li><a href="https://youtu.be/e-fSN4ArL-8">
+				<img src="thor.png" class="ui-li-icon">Thor
+				<p>Chris Hemsworth</p>
+				<p><strong><em>&quot;Bring Me Thanos!&quot;</em></strong></p>
+			</a></li>
+			
+			<li><a href="https://youtu.be/udKE1ksKWDE">
+				<img src="hulk.png" class="ui-li-icon">Hulk
+				<p>Mark Ruffalo</p>
+				<p><strong><em>&quot;That’s my secret, Cap. I'm ALWAYS angry.&quot;</em></strong></p>
+			</a></li>
+			
+			<li><a href="https://youtu.be/r75HbQmm748">
+				<img src="eye.png" class="ui-li-icon">Hawkeye
+				<p>Jeremy Lee Renner</p>
+				<p><strong><em>&quot;If you step out that door, you are an Avenger.&quot;</em></strong></p>
+			</a></li>
+			
+			<li><a href="https://youtu.be/6iGsKmkvuUU">
+				<img src="spiderman.png" class="ui-li-icon">Spider Man
+				<p>Tom Holland</p>
+				<p><strong><em>&quot;Hey, Everyone.&quot;</em></strong></p>
+				<span class="ui-li-count">new</span>
+			</a></li>
+		</ul>
+		</div>	
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h6>Copyright &copy; 2018 MARVEL. All rights reserved.</h6>
+		</div>
+	</div>
+	
+	
+	<div data-role="page" id="music" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-direction="reverse">Home</a>
+			<h1 style="color:red">MUSIC</h1>
+			<a href="#picture" data-rel="dialog">Picture</a>
+		</div>
+		<div data-role="content">
+			<div  style="text-align:center">
+					<img src="marvel-logo.jpg" width="100%">
+			</div>
+			<div data-role="tabs" data-theme="b" data-content-theme="e" style="margin-top: 10px;">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#tab1">Captain America</a></li>
+						<li><a href="#tab2">Iron Man</a></li>
+						<li><a href="#tab3">Thor</a></li>
+					</ul>
+				</div>
+				
+				<div id="tab1" class="tabs">
+					<h3>Captain America Theme</h3>	
+					<img class="poster" src="winter.jpg" alt="Captain America Poster" width="60%">
+					<audio controls width="100%" preload="metadata">
+						<source src="captainamerica.mp3" type="audio/mp3">
+					</audio>
+				</div>
+				<div id="tab2" class="tabs">
+					<h3>Iron Man Theme</h3>
+					<img class="poster" src="ironman.jpg" alt="Iron Man Poster" width="60%">
+					<audio controls width="100%" preload="metadata">
+						<source src="ironman.mp3" type="audio/mp3">
+					</audio>	
+				</div>
+				<div id="tab3" class="tabs">
+					<h3>Thor Theme</h3>	
+					<img class="poster" src="ragnarok.jpg" alt="Thor Poster" width="60%">
+					<audio controls width="100%" preload="metadata">
+						<source src="thor.mp3" type="audio/mp3">
+					</audio>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="picture"  data-theme="b">
+		
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-direction="reverse">Home</a>
+			<h1 style="color:red">PICTURE</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li id="first_pic"><a href="ironman2.gif" rel="external"><img src="ironman2.gif" /></a></li>	
+				<li><a href="captain2.gif" rel="external"><img src="captain2.gif" /></a></li>	
+				<li><a href="thor2.gif" rel="external"><img src="thor2.gif" /></a></li>	
+				<li><a href="hulk2.gif" rel="external"><img src="hulk2.gif" /></a></li>	
+				<li><a href="Hawkeye1.gif" rel="external"><img src="Hawkeye1.gif" /></a></li>	
+				<li><a href="blackwidow2.gif" rel="external"><img src="blackwidow2.gif" /></a></li>	
+				<li><a href="vision1.gif" rel="external"><img src="vision1.gif" /></a></li>  
+				<li id="first_pic"><a href=" spiderman2.gif" rel="external"><img src="spiderman2.gif"/></a></li>
+				<li><a href="antman1.gif" rel="external"><img src="antman1.gif"/></a></li>	
+				<li><a href="wasp1.gif" rel="external"><img src="wasp1.gif" /></a></li>	
+				<li><a href="starlord1.gif" rel="external"><img src="starlord1.gif" /></a></li>	 
+				<li><a href="gamora2.gif" rel="external"><img src="gamora2.gif" /></a></li>  
+				<li id="first_pic"><a href="doctor2.gif" rel="external"><img src="doctor2.gif" /></a></li>   
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h6>Copyright &copy; 2018 MARVEL. All rights reserved.</h6>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="survey" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-direction="reverse">Home</a>
+			<h1>SURVEY</h1>
+			<a href="#home" class="ui-btn-right" data-rel="dialog">Submit</a>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<fieldset>
+					<label for="input1">Favorite Movie</label>
+		 			<input type="text" name="input1" id="input1" placeholder="가장 좋아하는 마블 영화를 입력하세요"/>
+		 		</fieldset>
+		 		<fieldset>
+		 			<label for="input2">Favorite Character</label>
+					<input type="text" name="input2" id="input2" placeholder="가장 좋아하는 캐릭터를 입력하세요"/>
+				</fieldset>
+				<fieldset>
+					<label for="input3">Favorite Music</label>
+					<input type="text" name="input3" id="input3" placeholder="가장 좋아하는 음악을 입력하세요"/>
+				</fieldset>
+				
+				<fieldset>
+					<label for="input4">Favorite Scene</label>
+					<input type="text" name="input4" id="input4" placeholder="가장 좋아하는 장면을 입력하세요"/>
+				</fieldset>
+				
+				<fieldset>
+					<label for="input5">영화에 대한 전반적인 만족도</label>
+					<input type="range" name="input5" id="input5" value="50" min="0" max="100"/>
+				</fieldset>
+				
+				<fieldset data-role="controlgroup">
+					<legend>연령</legend>
+					<input type="radio" name="input6" id="under10" value="1"/>
+					<label for="under10">10대 이하</label>
+					<input type="radio" name="input6" id="age10" value="2"/>
+					<label for="age10">10대</label>
+					<input type="radio" name="input6" id="age20" value="3" checked="checked"/>
+					<label for="age20">20대</label>
+					<input type="radio" name="input6" id="age30" value="4"/>
+					<label for="age30">30대</label>
+					<input type="radio" name="input6" id="age40" value="5"/>
+					<label for="age40">40대 이상</label>
+				</fieldset>
+				<br/>	
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<legend>성별</legend>
+					<input type="radio" name="input7" id="male" value="1" checked="checked"/>
+					<label for="male">남자</label>
+					<input type="radio" name="input7" id="remale" value="2"/>
+					<label for="remale">여자</label>
+				</fieldset>
+				<br/>
+				<label for="input8">마블에게 바라는 점</label>
+					<textarea rows="10" id="input8"></textarea> 
+				<br/>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h6>Copyright &copy; 2018 MARVEL. All rights reserved.</h6>
+		</div>	
+	</div>
+</div>	
+</body>
+</html>
