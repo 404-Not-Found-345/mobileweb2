@@ -1,0 +1,68 @@
+﻿/* 스타일 초기화 */
+* { margin: 0px ; padding: 0px ; }
+header, body, footer { font-size: 14px; font-family: 나눔고딕, 굴림, 돋음, 'Times New Roman', serif; width: 100%; }
+header, footer { text-align : center; }
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; }
+
+/* 공통 스타일 */
+h1 { padding: 100px; font-size: 30px; color: white; text-shadow: 5px 5px 7px gray; }
+h2 { font-size: 15px; color: white; }
+h3 { margin: 10px; font-size: 15px; color: gray; text-shadow: 4px 4px 7px pink; }
+h1, h2 { background-image: url(header.jpg); background-repeat: repeat-x; /*background-color: lightblue;*/}
+
+img { border: 0; padding: 2px; }
+
+nav { margin: 0px 5px 5px 5px; }
+nav > span > a { font-style: bold; margin: 0px; padding: 6px; border: 2px solid #ed728f; float: right; text-decoration: none; background: #ed728f; color: white; }
+nav > span > a:hover { background: white; color: #ed728f; }
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	section { width: 80%; float: left; }
+	aside { width: 20%; text-align: center; float: right; }
+	footer { clear: both; }
+}
+
+.content  { clear: both; }
+.section1 ul li { list-style-position: inside; list-style-image: url("li.jpg"); }
+
+.manu { margin-top: 30px; }
+.name { color: #4C4C4C/*#F361A6 #EB539E*/; }
+
+/* 01mintro.html 적용 스타일 */
+#mintro_section1 { margin-left: 20px; }
+#mintro_section1 strong { color: #F361A6; font-size: 16pt;}
+#stu-pic { width: 9em; height: 12em; float: left; }
+#intro { margin: 30px; }
+
+/* 02minfo.html 적용 스타일 */
+#minfo_section1 { margin-left: 20px; margin-right: -20px; }
+#minfo_section1 li { margin-bottom: 10px; font-weight: bold; }
+#minfo_section1 td { padding: 5px; }
+#minfo_section1 table { margin: 10px 0px 0px 10px; }
+#year-table { table-layout: auto; width: 80%; border-collapse: seperate; }
+#year-table thead { background: pink; text-align: center; }
+#year-table thead th { padding: 5px; } 
+#logo { position: fixed; top:320px; left: 80px; opacity: 0.3; } 
+
+/* 03mstudy.html 적용 스타일 */
+#mstudy_section1 { margin-left: 20px; margin-right: -20px; }
+#mstudy_section1 iframe { margin: 10px 0px 0px 10px; }
+#none { list-style: none; }
+
+/* 04mcareer.html 적용 스타일 */
+#mcareer_section1 { margin-left: 20px; margin-right: -20px; }
+.semi-pic { width: 16em; height: 9em;  }
+#pic-container { overflow: hidden; }
+#pic-container:hover { height: 200px; }
+#pic1:hover { -webkit-transform: translate(150px,50px) scale(7,7); transform: scale(1.5); }
+#pic2:hover { -webkit-transform: translate(100px,50px) scale(7,7) ; transform: scale(1.5); }
+#pic3:hover { -webkit-transform: translate(30px,50px) scale(7,7); transform: scale(1.5); }
+
+/* 05mresume.html 적용 스타일 */
+#mresume_section1 { margin-left: 20px; margin-right: -20px; }
+#mresume_section1 table { margin: 10px -20px 30px 10px; padding: 5px; width: 95%; color: #8C8C8C; }
+#mresume_section1 th { font-size: 14pt; width: 25%/*140px*/; text-shadow: 5px 5px 7px #BDBDBD; }
+#mresume_section1 th, td { padding: 15px 10px 12px 10px; }
+.tabletop { border-top: 3px solid #ed728f; color: #ed728f; }
+.tablecenter { width: 20%/*130px*/; font-weight: bold; color: #ed728f; }
+.gray { color: #353535; }
